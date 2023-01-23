@@ -80483,3 +80483,36 @@ export const getOptions = (number, prefix = 'Choice ') =>
         text: `${prefix}${index}`,
         value: index,
     }))
+
+    export const filterOptions = [
+      {
+        key: "Active",
+        text: "Active",
+        value: "showActive"
+      },
+      {
+        key: "Closed",
+        text: "Closed",
+        value: "showClosed"
+      },
+      {
+        key: "Draft",
+        text: "Draft",
+        value: "showDraft"
+      },
+      {
+        key: "Expired",
+        text: "Expired",
+        value: "showExpired"
+      },
+      {
+        key: "Unexpired",
+        text: "Unexpired",
+        value: "showUnExpired"
+      }
+    ];
+
+    export const dateOptions = [
+      { key: 'Newest first', text: 'Newest first', value: 'asc' },
+      { key: 'Oldest first', text: 'Oldest first', value: 'desc' }
+    ];
